@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css_doc\card.css">
+<!--<link rel="stylesheet" href="css_doc\padding.css">-->
+<!-- <body background="images\back_3.jpg"> -->
+<center>
+<head>
+	<style type="text/css">
+		body {
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+font-family: Arial,Helvetica, sans-serif;
+color:#5A6AAA;
+}
+input{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 90%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #888888;
+
+}
+#submit{
+	position: absolute;
+	left: 500px;
+	border-radius: 10px;
+	height: 40px;
+	width: 100px;
+	cursor: pointer;
+	background: #5A6AAA;
+	margin-bottom: 0
+
+}
+#cancel{
+	position: absolute;
+	right: 500px;
+	border-radius: 10px;
+	height: 40px;
+	width: 100px;
+	cursor: pointer;
+	background: #5A6AAA;
+	margin-bottom: 0
+
+}
+#cancel:hover{
+	background: #3A4885;
+	box-shadow: 0 5px 8	px; 
+}
+
+#submit:hover{
+	background: #3A4885;
+	box-shadow: 0 5px 8	px; 
+}
+form div{
+	position: relative;
+}
+form div label{
+	position: absolute;
+	top: 4px;
+	pointer-events: none;
+	left: 0;	
+	right: 0;
+	transition: .5s;
+	color: #5A6AAA
+}
+input:focus ~label,#login_container input:valid ~label{
+	left: 0px;
+	right: 0px;
+	font-weight: bold;
+	font-size: 0px;
+}
+
+input:focus ,#login_container input:valid {
+	border-bottom: 2px solid #3A4885;
+}
+#box1{
+	height: 300px;
+	width: 700px;
+}
+		/*input[type=text], select, textarea {
+    		width: 35%;
+    		padding: 12px;
+    		border: 1px solid #ccc;
+    		border-radius: 4px;
+    		resize: vertical;
+		}
+		input[type=number], select, textarea {
+    		width: 35%;
+    		padding: 12px;
+    		border: 1px solid #ccc;
+    		border-radius: 4px;
+    		resize: vertical;
+		}
+		label {
+    		padding: 12px 12px 12px 0;
+    		display: inline-block;
+		}
+		input[type=submit] {
+    		background-color: #5A6AAA;
+   	 		color: white;
+    		padding: 12px 20px;
+    		border: none;
+    		border-radius: 4px;
+    		cursor: pointer;
+    		float: middle;
+		}
+		input[type=button] {
+    		background-color: #5A6AAA;
+   	 		color: white;
+    		padding: 12px 20px;
+    		border: none;
+    		border-radius: 4px;
+    		cursor: pointer;
+    		float: middle;
+		}
+		input[type=submit]:hover {
+    		background-color: #3A4885;
+    		box-shadow: 0 5px 8	px;
+		}
+		input[type=button]:hover {
+    		background-color: #3A4885;
+		}*/
+	</style>
+</head>
+	<body background="images\back_5.jpg">
+<div id="box1">
+	<form method="post" action="form_validation.php">
+	
+		<br><br>
+		<div>
+			<input type="text" name="f_name" id="f_name">
+			<label for="first_name">First Name</label>
+			<span  class="error_code_info" id="info_msg_Name"/>
+		</div>
+		
+		
+		<!-- <div>
+			<input type="text" name="m_name" id="m_name">
+			<label for="middle_name">Middle Name</label>
+			<span  class="error_code_info" id="info_msg_MName"/>
+		</div> -->
+		
+		
+		<div>
+			<input type="text" name="l_name" id="l_name">
+			<label for="last_name">Last Name</label>
+			<span  class="error_code_info" id="info_msg_LName"/>
+		</div>
+		
+		
+		<div>
+			<input type="text" name="address" id="address">
+			<label for="address">Address</label>
+			<span  class="error_code_info" id="info_msg_Address"/>
+		</div>
+		
+		
+		<div>
+			<input type="text" name="email" id="email">
+			<label for="email">Email</label>
+			<span  class="error_code_info" id="info_msg_Email"/>
+		</div>
+		
+		
+		<div>
+			<input type="text" name="phone" id="phone">
+			<label for="phone">Phone No</label>
+			<span  class="error_code_info" id="info_msg_PNo"/>
+		</div>
+
+
+		<!-- <div>
+			<input type="date" name="booking">
+			<label for="date">Booking Date:</label>
+			<span  class="error_code_info" id="info_msg_date"/>
+		</div> -->
+	<input type="submit"  id="submit" value="Submit">
+	
+	<a href="front_page.html">
+	<input type="button" id="cancel" value="Cancel">
+	</a>
+	</form>
+</div>
+</center>	
+</body>
+</html>

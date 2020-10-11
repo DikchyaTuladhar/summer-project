@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css_doc\button.css">
+<link rel="stylesheet" href="css_doc\card.css">
+<link rel="stylesheet" href="css_doc\navigation_bar.css">
+<link rel="stylesheet" href="css_doc\font.css">
+<link rel="stylesheet" href="css_doc\padding.css">
+<link rel="stylesheet" href="css_doc\three_column_layout.css">
+
+<style>
+/*icon*/
+#home {
+  width: 25px;
+  height: 25px;
+  background: url(images\home_icon) 0 0;
+}
+#fb {
+  width: 25px;
+  height: 25px;
+  background: url(images\fb_icon) 0 0;
+}
+#insta {
+  width: 25px;
+  height: 25px;
+  background: url(images\insta_icon) 0 0;
+}
+</style>
+</head>
+<body background="images\back_2.jpg">
+<ul>
+  <li><a class="active" href="front_page.html"><img id="home" src="images\home_icon.png" width="1" height="1"></a></li>
+  <li><a href="#contacts">Contact</a></li>
+</ul>
+<div class="header">
+  <center>
+     <p class="serif"><h1><font color="#1F2776">NayaBazar Multi Venue</font></h1></p>
+  </center>
+<CENTER>
+  <table>
+	<form method="post" action="login_validation.php">
+    <tr>
+		  <td>Email:</td>
+      <td><input type="text" name="email"></td>
+    </tr>
+    <tr>
+		  <td>Phone No:</td>
+      <td><input type="text" name="phone"></td>
+    </tr>
+    <tr>
+		 <td> <input type="submit" name="submit" value="Submit"></td>
+		  <td><input type="reset" name="reset" value="Cancel"></td>
+    </tr>
+  </form>
+</table>
+</CENTER>
+
+<center>
+<div class="footer">
+  <a name="contacts"></a>
+  <div>
+    <p class="serif">Nayabazar Multi Venue<br>Nayabazar,Kathmadu<br>01-4361372</p>
+    <a href=""><img id="fb" src="images\fb_icon.png" width="2" height="2"></a></li></a>
+    <a href=""><img id="insta" src="images\insta_icon.png" width="2" height="2"></a></li></a>
+  </div>
+  <!--<a href="#">
+    <p class="serif">Go to Top</p>
+  </a>-->
+</div>
+</center>
+</body>
+</html>

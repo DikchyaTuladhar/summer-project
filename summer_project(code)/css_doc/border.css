@@ -1,0 +1,5 @@
+#bordering { 
+  	border: 10px solid transparent;
+  	padding: 15px;
+  	border-image: images\border.png 30 stretch;
+}

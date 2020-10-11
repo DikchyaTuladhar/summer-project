@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css_doc\button.css">
+<link rel="stylesheet" href="css_doc\fadeinbox.css">
+<link rel="stylesheet" href="css_doc\padding.css">
+<link rel="stylesheet" href="css_doc\font.css">
+<head>
+<style type="text/css">
+#submit {
+  background-color: #5A6AAA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: middle;
+}
+#submit:hover {
+  background-color: #3A4885;
+}
+</style>
+</head>
+<body background="images\back.jpg">
+<center> 
+  
+    <p class="serif"><h1> Choose one Hall</h1></p> 
+    <form method="post" action="hall1.php">
+	<div class="container"  style="max-width: 500px">
+    <img src="party_venue\IMG-1.jpg" class="image" style="width:100%">
+    <div class="middle" >
+      <div class="text"><input type="submit" value="Hall-1" name="hall" ></div>
+    </div>
+  </div>
+  </form>
+  <form method="post" action="hall2.php">
+  <div class="container"  style="max-width: 500px">
+    <img src="party_venue\IMG-2.jpg" class="image" style="width:100%">
+    <div class="middle">
+      <div class="text"><input type="submit" value="Hall-2" name="hall"  > </div>
+    </div>
+  </div>
+</form>
+</center>
+<!-- <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script> -->
+</body>
+</html>

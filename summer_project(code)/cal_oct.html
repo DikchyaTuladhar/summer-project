@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.btn {
+
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #00D4B0;
+  color: white;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+.color{
+  background-color: #F70029;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="month">      
+  <ul>
+    <a href="cal_sep.html"><li class="prev">&#10094;</li></a>
+    <a href="cal_nov.html"><li class="next">&#10095;</li></a>
+    <li>
+      October<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mon</li>
+  <li>Tue</li>
+  <li>Wen</li>
+  <li>Thu</li>
+  <li>Fri</li>
+  <li>Sat</li>
+  <li>Sun</li>
+</ul>
+
+<ul class="days"> 
+  <li class="btn"></li> 
+  <li class="btn">1</li>
+  <li class="btn">2</li>
+  <li class="btn">3</li>
+  <li class="btn">4</li>
+  <li class="btn">5</li>
+  <li class="btn">6</li>
+  <li class="btn">7</li>
+  <li class="btn">8</li>
+  <li class="btn">9</li>
+  <li class="btn color">10</li>
+  <li class="btn">11</li>
+  <li class="btn">12</li>
+  <a href="date_2.php"><li class="btn">13</li></a>
+  <li class="btn">14</li>
+  <li class="btn">15</li>
+  <li class="btn">16</li>
+  <li class="btn">17</li>
+  <li class="btn color">18</li>
+  <li class="btn">19</li>
+  <li class="btn">20</li>
+  <li class="btn">21</li>
+  <a href="date_3.php"><li class="btn">22</li></a>
+  <li class="btn">23</li>
+  <li class="btn">24</li>
+  <li class="btn">25</li>
+  <li class="btn">26</li>
+  <li class="btn">27</li>
+  <li class="btn">28</li>
+  <a href="date_4.php"><li class="btn">29</li></a>
+  <li class="btn">30</li>
+  <li class="btn">31</li>
+</ul>
+
+</body>
+</html>
